@@ -9,9 +9,9 @@ export default function Header() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position='static'>
         <Toolbar sx={{ justifyContent: 'center', gap: 5 }}>
-          <Button color='inherit'>My projects</Button>
+          <Button color='inherit'>About Me</Button>
           <Button color='inherit' disabled={true}>
-            About Me
+            My projects
           </Button>
           <Button color='inherit'>Contacts</Button>
         </Toolbar>
