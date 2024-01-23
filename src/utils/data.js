@@ -27,7 +27,7 @@ description:  "Using the free Pokemon API pokeapi.com create pokedex like app.  
 {
     name: 'Minimalistic dashboard',
     screenshot: dasboardShot,
-    deploy: 'https://dashboard-novikyaroslav.vercel.app',
+    deploy: 'https://dashboard-alpha-sand.vercel.app',
     github: 'https://github.com/NovikYaroslav/dashboard',
     stack: ['JavaScript', 'HTML','CSS','React', 'Redux(RTK)', 'ReactRouter'],
     additionalTechs: ['CRA', 'React-draggable', 'React-calendar'],
