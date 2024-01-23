@@ -7,7 +7,6 @@ import Stack from '@mui/material/Stack';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import TabletMacIcon from '@mui/icons-material/TabletMac';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
-import dasboard from '../../img/Dashboard.png';
 
 import { projectsData } from '../../utils/data';
 
@@ -62,6 +61,7 @@ export default function WebPagePreview() {
                 <img
                   src={project.screenshot}
                   style={{ width: '100%', height: '700' }}
+                  alt='page-screenshot'
                 />
               ) : (
                 <iframe
