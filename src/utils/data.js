@@ -73,15 +73,5 @@ description:  "Using the free Pokemon API pokeapi.com create pokedex like app.  
     additionalTechs: ['CRA', 'JWT Token', 'Rest API', 'Eslint'],
     responsive: true,
     description:  "Create fullstack social network app. Take data from backend. Write data to backend. Add authorization. Create page with possibility to edit profile. Deploy frontend and backend.  Full task discription in GutHub"
-   },   
-   {
-    name: 'page in page',
-    screenshot: null,
-    deploy: 'https://portfolio-ny.netlify.app',
-    github: 'https://github.com/NovikYaroslav/react-mesto-api-full-gha',
-    stack: ['JavaScript', 'HTML', 'CSS', 'React', 'React Context', 'ReactRouter'],
-    additionalTechs: ['CRA', 'JWT Token', 'Rest API', 'Eslint'],
-    responsive: true,
-    description:  "Create fullstack social network app. Take data from backend. Write data to backend. Add authorization. Create page with possibility to edit profile. Deploy frontend and backend.  Full task discription in GutHub"
-   }, 
+   },
 ]
