@@ -8,7 +8,7 @@ export default function Footer() {
         display: 'flex',
         marginTop: '30px',
         marginBottom: '30px',
-        backgroundColor: '#FF8400',
+        backgroundColor: '#E38B29',
         justifyContent: 'center',
       }}
     >

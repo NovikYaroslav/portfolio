@@ -1,9 +1,9 @@
-import WebPagePreview from '../components/Web-page-preview/Web-page-preview';
+import ProjectCard from '../components/Project-card/Project-card';
 
 export default function MyProjects() {
   return (
     <div>
-      <WebPagePreview />
+      <ProjectCard />
     </div>
   );
 }

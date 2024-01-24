@@ -11,7 +11,7 @@ import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import { Typography } from '@mui/material';
 import { projectsData } from '../../utils/data';
 
-export default function WebPagePreview() {
+export default function ProjectCard() {
   return (
     <Container sx={{ width: '100%' }}>
       {projectsData.map((project) => {
@@ -45,9 +45,15 @@ export default function WebPagePreview() {
                 >
                   <Box sx={{ justifySelf: 'center' }}>
                     {' '}
-                    <Typography variant='h2' sx={{ margin: '0' }}>
-                      {project.name}
+                    <Typography
+                      variant='h3'
+                      sx={{ margin: '0', color: '#E38B29' }}
+                    >
+                      {project.name.toUpperCase()}
                     </Typography>{' '}
+                    <Typography>
+                      Status: {project.status.toUpperCase()}
+                    </Typography>
                   </Box>
                   {project.responsive ? (
                     <Box
@@ -76,11 +82,11 @@ export default function WebPagePreview() {
                 </Box>
 
                 <Box sx={{ display: 'flex', gap: 3 }}>
-                  <Link href={project.deploy} target='blank'>
+                  <Link href={project.deploy.toUpperCase()} target='blank'>
                     LIVE
                   </Link>
 
-                  <Link href={project.github} target='blank'>
+                  <Link href={project.github.toUpperCase()} target='blank'>
                     GITHUB
                   </Link>
                 </Box>
@@ -138,7 +144,11 @@ export default function WebPagePreview() {
                 {project.screenshot ? (
                   <img
                     src={project.screenshot}
-                    style={{ width: '100%', height: '700' }}
+                    style={{
+                      width: '100%',
+                      height: '700',
+                      border: '2px solid #E38B29',
+                    }}
                     alt='page-screenshot'
                   />
                 ) : (
@@ -147,7 +157,7 @@ export default function WebPagePreview() {
                     src={project.deploy}
                     width='100%'
                     height='700'
-                    style={{ border: 'none' }}
+                    style={{ border: '3px solid #E38B29' }}
                   />
                 )}
               </CardContent>
@@ -155,7 +165,7 @@ export default function WebPagePreview() {
             <Box
               sx={{
                 display: 'flex',
-                border: '1px solid #272727',
+                border: '1px solid #E48F45',
                 width: '50%',
                 justifySelf: 'center',
               }}

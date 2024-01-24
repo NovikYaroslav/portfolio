@@ -6,14 +6,32 @@ import Button from '@mui/material/Button';
 
 export default function Header() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position='static'>
-        <Toolbar sx={{ justifyContent: 'center', gap: 5 }}>
-          <Button color='inherit'>About Me</Button>
-          <Button color='inherit' disabled={true}>
-            My projects
-          </Button>
-          <Button color='inherit'>Contacts</Button>
+    <Box sx={{ flexGrow: 1, padding: '0px' }}>
+      <AppBar position='static' sx={{ padding: '0' }}>
+        <Toolbar
+          sx={{
+            backgroundColor: '#E38B29',
+          }}
+        >
+          <p
+            style={{
+              textAlign: 'start',
+              justifySelf: 'flex-start',
+              fontSize: 28,
+              border: '3px solid #272727',
+              borderRadius: '15px',
+              padding: 2,
+              margin: 10,
+              color: '#272727',
+            }}
+          >
+            NY
+          </p>
+          <Box sx={{ marginRight: 'auto' }}>
+            <Button color='inherit' sx={{ color: '#272727' }}>
+              My projects
+            </Button>
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>
