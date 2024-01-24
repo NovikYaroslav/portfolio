@@ -3,6 +3,7 @@ import { ThemeProvider, createTheme } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import Header from './components/Header/Header';
 import MyProjects from './pages/My-Projects';
+import Footer from './components/Footer/Footer';
 
 const darkTheme = createTheme({
   palette: {
@@ -16,6 +17,7 @@ function App() {
        <CssBaseline/>
        <Header/>
        <MyProjects/>
+    <Footer/>
     </ThemeProvider>
 
 
