@@ -27,9 +27,23 @@ export default function Header() {
           >
             NY
           </p>
+          <p
+            style={{
+              textAlign: 'start',
+              justifySelf: 'flex-start',
+              fontSize: 28,
+              color: '#272727',
+              margin: 0,
+            }}
+          >
+            /
+          </p>
           <Box sx={{ marginRight: 'auto' }}>
-            <Button color='inherit' sx={{ color: '#272727' }}>
-              My projects
+            <Button
+              color='inherit'
+              sx={{ color: '#272727', padding: '0 0 0 5' }}
+            >
+              Projects
             </Button>
           </Box>
         </Toolbar>
