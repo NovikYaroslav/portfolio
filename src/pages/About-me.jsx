@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 
 export default function AboutMe() {
   return (
-    <>
+    <Box>
       <Box component='section' sx={{ p: 1, border: '1px dashed grey' }}>
         <Typography sx={{ textAlign: 'left' }}>Hi, my name is</Typography>
 
@@ -15,6 +15,6 @@ export default function AboutMe() {
       <Box component='section' sx={{ p: 2, border: '1px dashed grey' }}>
         <Typography sx={{ textAlign: 'left' }}></Typography>
       </Box>
-    </>
+    </Box>
   );
 }

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -7,6 +8,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Sidebar from '../Sidebar/Sidebar';
 
 export default function Header() {
+  const location = useLocation();
+  const locationName = location.pathname.slice(1, location.pathname.length);
   const [barOpened, setBarOpened] = useState(false);
 
   return (
@@ -53,12 +56,12 @@ export default function Header() {
               color='inherit'
               sx={{ color: '#272727', padding: '0 0 0 5' }}
             >
-              Projects
+              {locationName}
             </Button>
           </Box>
           <Button
             variant='text'
-            sx={{ marginRight: '15px' }}
+            sx={{ marginRight: '17px' }}
             onClick={() => {
               setBarOpened(!barOpened);
             }}

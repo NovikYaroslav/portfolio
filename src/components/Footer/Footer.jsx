@@ -6,10 +6,12 @@ export default function Footer() {
     <Box
       sx={{
         display: 'flex',
+        height: '72px',
         marginTop: '30px',
         marginBottom: '30px',
         backgroundColor: '#E38B29',
         justifyContent: 'center',
+        alignItems: 'center',
       }}
     >
       <p style={{ color: 'black' }}>
