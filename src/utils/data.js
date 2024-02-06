@@ -7,7 +7,7 @@ export const projectsData = [
     backend: 'active',
     screenshot: null,
     deploy: 'https://www.bibbiano.com',
-    github: 'https://github.com/NovikYaroslav/fortech-test-work',
+    github: false,
     stack: ['Wordress'],
     additionalTechs: ['Jupiter 6', 'WP Bakery'],
     responsive: true,

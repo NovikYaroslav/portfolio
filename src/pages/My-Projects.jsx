@@ -1,13 +1,13 @@
 import ProjectCard from '../components/Project-card/Project-card';
-// import { Container } from '@mui/material';
 import { projectsData } from '../utils/data';
 
 export default function MyProjects() {
   return (
     <div
       style={{
-        width: '80%',
-        margin: 'auto',
+        display: 'flex',
+        flexDirection: 'column',
+        margin: '0 100px',
       }}
     >
       {projectsData.map((project) => (
