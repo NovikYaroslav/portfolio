@@ -19,23 +19,14 @@ export default function ProjectCard({ project }) {
 
   useEffect(() => {
     if (!isCollapsed) {
-      console.log('скролю');
       const cardNameElement = document.getElementById(`${project.name}-name`);
       if (cardNameElement) {
         cardNameElement.scrollIntoView({ block: 'start' });
       }
     }
-  }, [isCollapsed]);
+  }, [isCollapsed, project.name]);
 
   return (
-    // <Box
-    //   sx={{
-    //     display: 'flex',
-    //     flexDirection: 'column',
-    //     alignItems: 'center',
-    //     gap: '15px',
-    //   }}
-    // >
     <Card
       variant='outlined'
       sx={{
@@ -207,14 +198,5 @@ export default function ProjectCard({ project }) {
         </Button>
       </CardContent>
     </Card>
-    //   {/* <Box
-    //     sx={{
-    //       display: 'flex',
-    //       border: '1px solid #E48F45',
-    //       width: '50%',
-    //       justifySelf: 'center',
-    //     }}
-    //   ></Box> */}
-    // {/* </Box> */}
   );
 }
