@@ -1,18 +1,20 @@
 import { useEffect, useState } from 'react';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Link from '@mui/material/Link';
-import Chip from '@mui/material/Chip';
-import Stack from '@mui/material/Stack';
+import {
+  Box,
+  Card,
+  CardContent,
+  Link,
+  Chip,
+  Stack,
+  Typography,
+  Collapse,
+  Button,
+} from '@mui/material';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import TabletMacIcon from '@mui/icons-material/TabletMac';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
-import Typography from '@mui/material/Typography';
-import Collapse from '@mui/material/Collapse';
-import Button from '@mui/material/Button';
 
 export default function ProjectCard({ project }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
