@@ -64,10 +64,10 @@ export default function ProjectCard({ project }) {
                 {project.name.toUpperCase()}
               </Typography>{' '}
               <Box sx={{ marginTop: '10px' }}>
-                <Typography>
+                <Typography sx={{ color: '#F8F4EC' }}>
                   Frontend: {project.status.toUpperCase()}
                 </Typography>
-                <Typography>
+                <Typography sx={{ color: '#F8F4EC' }}>
                   Backend: {project.backend.toUpperCase()}
                 </Typography>
               </Box>
@@ -117,7 +117,10 @@ export default function ProjectCard({ project }) {
                 marginTop: '10px',
               }}
             >
-              <Typography variant='h3' sx={{ fontSize: '28px' }}>
+              <Typography
+                variant='h3'
+                sx={{ fontSize: '28px', color: '#F8F4EC' }}
+              >
                 Key techs:{' '}
               </Typography>
               <Stack
@@ -134,7 +137,10 @@ export default function ProjectCard({ project }) {
                 })}
               </Stack>
 
-              <Typography variant='h3' sx={{ fontSize: '28px' }}>
+              <Typography
+                variant='h3'
+                sx={{ fontSize: '28px', color: '#F8F4EC' }}
+              >
                 Secondary techs:{' '}
               </Typography>
               <Stack
@@ -171,11 +177,17 @@ export default function ProjectCard({ project }) {
                 marginBottom: '10px',
               }}
             >
-              <Typography variant='h3' sx={{ fontSize: '28px' }}>
+              <Typography
+                variant='h3'
+                sx={{ fontSize: '28px', color: '#F8F4EC' }}
+              >
                 {' '}
                 Short task description:
               </Typography>
-              <Typography variant='p'> {project.description}</Typography>
+              <Typography variant='p' sx={{ color: '#F8F4EC' }}>
+                {' '}
+                {project.description}
+              </Typography>
             </Box>
 
             {project.screenshot ? (

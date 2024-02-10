@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import Sidebar from '../Sidebar/Sidebar';
 import { Typography } from '@mui/material';
+import '../../styles/buttons.css';
 
 export default function Header() {
   const location = useLocation();
@@ -35,6 +36,7 @@ export default function Header() {
         flexGrow: 1,
         padding: '0px',
         position: 'relative',
+        width: '100vw',
       }}
     >
       <AppBar position='static' sx={{ padding: '0' }}>
@@ -79,8 +81,18 @@ export default function Header() {
             </Typography>
           </Box>
           <Button
+            className='buttons'
             variant='text'
-            sx={{ marginRight: '17px' }}
+            sx={{
+              borderRadius: '50%',
+              marginRight: '17px',
+              transform: barOpened ? 'rotate(90deg)' : 'rotate(0deg)',
+              transition: 'transform 0.6s ease-in-out',
+              '&:hover': {
+                backgroundColor: 'transparent', // Adjust the rotation angle as needed
+                transition: 'none',
+              },
+            }}
             onClick={() => {
               setBarOpened(!barOpened);
             }}
@@ -89,7 +101,7 @@ export default function Header() {
           </Button>
         </Toolbar>
       </AppBar>
-      <Sidebar isOpen={barOpened} />
+      {/* <Sidebar isOpen={barOpened} /> */}
     </Box>
   );
 }
