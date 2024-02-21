@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -13,6 +13,11 @@ export default function Header() {
   const location = useLocation();
   const locationName = location.pathname.slice(1, location.pathname.length);
   const [barOpened, setBarOpened] = useState(false);
+
+  useEffect(() => {
+    setBarOpened(false);
+  }, [locationName]);
+
   // const menuRef = useRef(null);
 
   // useEffect(() => {
