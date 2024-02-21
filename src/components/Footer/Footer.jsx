@@ -8,15 +8,15 @@ export default function Footer() {
   return (
     <Box
       sx={{
-        // position: 'fixed',
-        // bottom: 0,
-        // right: 0,
-        // left: 0,
+        ...(currentLocation === 'about' ? { position: 'fixed' } : null),
+        bottom: 0,
+        right: 0,
+        left: 0,
         display: 'flex',
         width: '100vw',
-        height: '72px',
+        height: '38px',
         marginTop: '30px',
-        backgroundColor: '#E38B29',
+        backgroundColor: '#F4F4F4',
         justifyContent: 'center',
         alignItems: 'center',
       }}

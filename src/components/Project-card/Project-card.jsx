@@ -59,7 +59,7 @@ export default function ProjectCard({ project }) {
               {' '}
               <Typography
                 variant='h2'
-                sx={{ margin: '0', fontSize: '30px', color: '#E38B29' }}
+                sx={{ margin: '0', fontSize: '30px', color: '#FD5F00' }}
               >
                 {project.name.toUpperCase()}
               </Typography>{' '}
@@ -196,7 +196,7 @@ export default function ProjectCard({ project }) {
                 style={{
                   width: '100%',
                   height: '700',
-                  border: '2px solid #E38B29',
+                  border: '2px solid #FD5F00',
                 }}
                 alt='page-screenshot'
               />
@@ -206,11 +206,12 @@ export default function ProjectCard({ project }) {
                 src={project.deploy}
                 width='100%'
                 height='1000'
-                style={{ border: '3px solid #E38B29' }}
+                style={{ border: '3px solid #FD5F00' }}
               />
             )}
           </Collapse>
           <Button
+            sx={{ width: '100px', margin: 'auto' }}
             onClick={() => {
               setIsCollapsed(!isCollapsed);
             }}
@@ -227,7 +228,7 @@ export default function ProjectCard({ project }) {
       <Box
         sx={{
           display: 'flex',
-          border: '1px solid #E48F45',
+          border: '1px solid #FD5F00',
           width: '50%',
           justifySelf: 'center',
         }}

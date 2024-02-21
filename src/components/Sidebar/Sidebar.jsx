@@ -17,7 +17,7 @@ export default function Sidebar({ isOpen }) {
         sx={{
           color: '#272727',
           '&:disabled': {
-            color: '#F3F8FF', // Adjust the rotation angle as needed
+            color: '#FD5F00',
           },
         }}
         onClick={() => {
@@ -30,7 +30,12 @@ export default function Sidebar({ isOpen }) {
       <Button
         className='buttons'
         variant='text'
-        sx={{ color: '#272727' }}
+        sx={{
+          color: '#272727',
+          '&:disabled': {
+            color: '#FD5F00',
+          },
+        }}
         onClick={() => {
           navigate('/projects');
         }}
@@ -38,7 +43,7 @@ export default function Sidebar({ isOpen }) {
       >
         projects
       </Button>
-      <Button
+      {/* <Button
         className='buttons'
         variant='text'
         sx={{ color: '#272727' }}
@@ -48,7 +53,7 @@ export default function Sidebar({ isOpen }) {
         disabled={currentLocation === 'contacts'}
       >
         contacts
-      </Button>
+      </Button> */}
     </Box>
   );
 }

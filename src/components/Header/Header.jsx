@@ -42,7 +42,7 @@ export default function Header() {
       <AppBar position='static' sx={{ padding: '0' }}>
         <Toolbar
           sx={{
-            backgroundColor: '#E38B29',
+            backgroundColor: '#F4F4F4',
           }}
         >
           <Typography
@@ -101,7 +101,7 @@ export default function Header() {
           </Button>
         </Toolbar>
       </AppBar>
-      {/* <Sidebar isOpen={barOpened} /> */}
+      <Sidebar isOpen={barOpened} />
     </Box>
   );
 }

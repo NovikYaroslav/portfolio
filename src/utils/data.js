@@ -65,7 +65,7 @@ export const projectsData = [
   {
     name: 'Movies explorer (2023)',
     status: 'Done',
-    backend: 'shuted down ',
+    backend: 'shutted down ',
     screenshot: null,
     deploy: 'https://2120755-what-to-watch-12.vercel.app',
     github: 'https://github.com/NovikYaroslav/2120755-what-to-watch-12',
@@ -87,7 +87,7 @@ export const projectsData = [
   {
     name: 'Airbnb like application (2023)',
     status: 'Done',
-    backend: 'shuted down ',
+    backend: 'shutted down ',
     screenshot: null,
     deploy: 'https://2120755-six-cities-simple-12.vercel.app',
     github: 'https://github.com/NovikYaroslav/2120755-six-cities-simple-12',
