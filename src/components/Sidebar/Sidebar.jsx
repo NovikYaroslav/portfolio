@@ -2,7 +2,6 @@ import { Box, Button } from '@mui/material';
 import { useNavigate, useLocation } from 'react-router-dom';
 import '../../styles/buttons.css';
 import './Sidebar.css';
-import { hover } from '@testing-library/user-event/dist/hover';
 
 export default function Sidebar({ isOpen }) {
   const navigate = useNavigate();
