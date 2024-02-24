@@ -99,7 +99,7 @@ export default function AboutMe() {
         }}
       >
         <motion.div
-          initial={{ x: -2000 }}
+          initial={{ x: -3000 }}
           animate={{
             x: 0,
             transition: { delay: 2.5, duration: 2 },
@@ -139,7 +139,7 @@ export default function AboutMe() {
         </motion.div>
 
         <motion.div
-          initial={{ x: 2000 }}
+          initial={{ x: 3000 }}
           animate={{
             x: 0,
             transition: { delay: 2.5, duration: 2 },

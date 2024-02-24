@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import ProjectCard from '../components/Project-card/Project-card';
 import { projectsData } from '../utils/data';
+import { Box } from '@mui/material';
 
 export default function MyProjects() {
   useEffect(() => {
@@ -8,16 +9,17 @@ export default function MyProjects() {
   }, []);
 
   return (
-    <div
-      style={{
+    <Box
+      sx={{
         display: 'flex',
         flexDirection: 'column',
-        margin: '0 100px',
+        justifyContent: 'center',
+        margin: '30px 100px',
       }}
     >
       {projectsData.map((project) => (
         <ProjectCard key={project.name} project={project} />
       ))}
-    </div>
+    </Box>
   );
 }

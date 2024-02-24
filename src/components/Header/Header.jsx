@@ -89,9 +89,10 @@ export default function Header() {
             className='buttons'
             variant='text'
             sx={{
-              borderRadius: '50%',
-              marginRight: '17px',
-              transform: barOpened ? 'rotate(90deg)' : 'rotate(0deg)',
+              display: 'flex',
+              justifyContent: 'end',
+              padding: '0',
+              transform: barOpened ? 'backgroung: #FD5F00' : 'rotate(0deg)',
               transition: 'transform 0.6s ease-in-out',
               '&:hover': {
                 backgroundColor: 'transparent', // Adjust the rotation angle as needed

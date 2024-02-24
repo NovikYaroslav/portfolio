@@ -1,5 +1,26 @@
 import dasboardShot from '../img/Dashboard.png';
 
+export const portfolioRoutes = ['about', 'projects'];
+
+export const contacts = [
+  {
+    type: 'Email',
+    value: 'kodzima89@gmail.com',
+  },
+  {
+    type: 'Telegram',
+    value: '@Kodzima',
+  },
+  {
+    type: 'Phone',
+    value: '+393481938569',
+  },
+  {
+    type: 'Github',
+    value: '+393481938569',
+  },
+];
+
 export const projectsData = [
   {
     name: 'Bibbiano (2023)',

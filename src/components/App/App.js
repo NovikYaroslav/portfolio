@@ -4,6 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Header from '../Header/Header';
 import MyProjects from '../../pages/My-Projects';
 import AboutMe from '../../pages/About-me';
+import Contacts from '../../pages/Contacts';
 import Footer from '../Footer/Footer';
 
 const darkTheme = createTheme({
@@ -21,6 +22,7 @@ function App() {
         <Route index element={<Navigate to='/about' replace />} />
         <Route path='/projects' element={<MyProjects />} />
         <Route path='/about' element={<AboutMe />} />
+        <Route path='/contacts' element={<Contacts />} />
       </Routes>
       <Footer />
     </ThemeProvider>
