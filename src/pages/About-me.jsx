@@ -12,6 +12,7 @@ export default function AboutMe() {
         margin: '20px 60px',
         gap: '50px',
         overflow: 'hidden',
+        minHeight: 'calc(100vh - 144px)',
       }}
     >
       <Box

@@ -17,7 +17,7 @@ export default function Sidebar({ isOpen }) {
           className='buttons'
           variant='text'
           sx={{
-            color: '#272727',
+            color: 'white',
             '&:disabled': {
               color: '#FD5F00',
             },

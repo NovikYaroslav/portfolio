@@ -18,23 +18,6 @@ export default function Header() {
     setBarOpened(false);
   }, [locationName]);
 
-  // const menuRef = useRef(null);
-
-  // useEffect(() => {
-  //   function handleClickOutside(event) {
-  //     if (menuRef.current && !menuRef.current.contains(event.target)) {
-  //       // Проверка, что клик был сделан вне области меню
-  //       setBarOpened(false); // Закрыть меню
-  //     }
-  //   }
-
-  //   document.addEventListener('mousedown', handleClickOutside); // Добавление обработчика события клика на всю страницу
-
-  //   return () => {
-  //     document.removeEventListener('mousedown', handleClickOutside); // Удаление обработчика события клика при размонтировании компонента
-  //   };
-  // }, [menuRef]);
-
   return (
     <Box
       sx={{
@@ -47,7 +30,7 @@ export default function Header() {
       <AppBar position='static' sx={{ padding: '0' }}>
         <Toolbar
           sx={{
-            backgroundColor: '#F4F4F4',
+            backgroundColor: 'transparent',
           }}
         >
           <Typography
@@ -55,11 +38,11 @@ export default function Header() {
               textAlign: 'start',
               justifySelf: 'flex-start',
               fontSize: 28,
-              border: '3px solid #272727',
+              border: '3px solid white',
               borderRadius: '15px',
               padding: 2,
               margin: 10,
-              color: '#272727',
+              color: 'white',
             }}
           >
             NY
@@ -69,7 +52,7 @@ export default function Header() {
               textAlign: 'start',
               justifySelf: 'flex-start',
               fontSize: 28,
-              color: '#272727',
+              color: 'white',
               margin: 0,
             }}
           >
@@ -80,7 +63,7 @@ export default function Header() {
             // ref={menuRef}
           >
             <Typography
-              style={{ color: '#272727', margin: '0 0 0 5px', fontSize: 22 }}
+              style={{ color: 'white', margin: '0 0 0 5px', fontSize: 22 }}
             >
               {locationName.toUpperCase()}
             </Typography>
@@ -103,7 +86,7 @@ export default function Header() {
               setBarOpened(!barOpened);
             }}
           >
-            <MenuIcon fontSize='large' sx={{ color: '#272727' }} />
+            <MenuIcon fontSize='large' sx={{ color: 'white' }} />
           </Button>
         </Toolbar>
       </AppBar>
