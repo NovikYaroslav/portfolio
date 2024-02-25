@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -7,8 +7,6 @@ import { Typography, Box } from '@mui/material';
 import { Email, Phone } from '@mui/icons-material';
 
 export default function Footer() {
-  const location = useLocation();
-  const currentLocation = location.pathname.slice(1, location.pathname.length);
   const [emailVisible, setEmailVisible] = useState(false);
   const [phonelVisible, setPhoneVisible] = useState(false);
 
